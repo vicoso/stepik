@@ -1,0 +1,14 @@
+X = input()
+X = X.split(" ")
+X = [int(item) for item in X]
+if (len(X) == 1) :
+  print(X[0])
+else:
+  for i in range(len(X)):
+    if i == 0 :
+      print(X[1] + X[len(X) - 1], end=' ')
+    else :
+      if i == len(X) - 1 :
+        print(X[0] + X[len(X) - 2], end=' ')
+      else:
+        print(X[i - 1] + X[i + 1], end=' ')
