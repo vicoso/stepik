@@ -1,0 +1,12 @@
+genome=input()
+M=0
+for nucl in genome:
+  if nucl=='c'or 'g' or 't' or 'a' or 'A' or 'C' or 'T' or 'G':
+    M+=1
+X=genome.count('g')
+Y=genome.count('c')
+R=genome.count('G')
+P=genome.count('C')
+Z=X+Y+R+P
+print((Z/M)*100)
+
